@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" defer></script>
+    <!--<title>Responsive Regisration Form </title>--> 
+</head>
+<body>
+    <div class="container">
+        <header>Price Prediction</header>
+
+        <form action="#" id="form">
+            <div class="form first">
+                <div class="details personal">
+                    <!-- <span class="title">Personal Details</span> -->
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Latitude</label>
+                            <input  placeholder="Enter latitude here" name="latitude" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Longitude</label>
+                            <input placeholder="Enter longitude here" name="longitude" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Is there Gym ?</label>
+                            <!-- <input type="text" placeholder="Enter Yes or No" required> -->
+                            <select name="gym">
+                                <option disabled selected>Select Option</option>
+
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Is there Lift ?</label>
+                            <!-- <input type="text" placeholder="Enter Yes or No" required> -->
+                            <select name="lift">
+                                <option disabled selected>Select Option</option>
+
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Is there Swimming Pool ?</label>
+                            <!-- <input type="text" placeholder="Enter Yes or No" required> -->
+                            <select name="pool">
+                                <option disabled selected>Select Option</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Is Negotiable ?</label>
+                            <!-- <input type="text" placeholder="Enter Yes or No" required> -->
+                            <select name="negotiable">
+                                <option disabled selected>Select Option</option>
+
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+
+                    </div>  
+                </div>
+
+                <div class="details ID">
+                    <!-- <span class="title">Identity Details</span> -->
+
+                    <div class="fields">
+                        
+                        <div class="input-field">
+                            <label>Property Size</label>
+                            <input type="text" placeholder="Enter Property Size" name="property" required>
+                        </div>
+
+                        <div class="input-field">
+
+                            <label>Property Age</label>
+                            <input type="text" placeholder="Enter Property Age" name="age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Bathrooms</label>
+                            <input type="number" placeholder="Enter number of Bathrooms" name="bathrooms" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Cupboards</label>
+                            <input type="number" placeholder="Enter number of Cupboards" name="cupboards" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Floor Number</label>
+                            <input type="number" placeholder="Enter Floor Number" name="floor" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Total Number of Floor</label>
+                            <input type="number" placeholder="Enter Number of Floors" name="n_floors" required>
+                        </div>
+
+                        
+                        <div class="input-field">
+                            <label>Balconies</label>
+                            <input type="number" placeholder="Enter Number of Balconies" name="balcony" required>
+                        </div>
+                        <div class="buttons">
+                            
+                            
+                            <button class="sumbit" id="submit">
+                                <span class="btnText">Submit</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>
+                   
+                </div> 
+            </div>
+
+            
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="container">
+        <header>Price Predicted</header>
+
+        <p class="answer">-/-</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
