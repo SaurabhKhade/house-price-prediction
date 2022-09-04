@@ -159,6 +159,9 @@ form .buttons button,
   font-weight: 700;
   font-size: 24px;
 }
+.form {
+  border-bottom: 1px solid gray;
+}
 
 @media (max-width: 750px) {
   .container form {
